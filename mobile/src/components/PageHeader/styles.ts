@@ -6,15 +6,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#47b5b6'
   },
 
-  topBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between'
-  },
-
   stage: {
     color: '#FFF',
     marginTop: 20,
+  },
+
+  warning: {
+    marginTop: 20,
+    color: '#922D50',
   },
 
   title: {

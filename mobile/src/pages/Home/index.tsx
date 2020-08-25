@@ -1,7 +1,8 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { RectButton } from 'react-native-gesture-handler';
+
+import HorizontalButton from '../../components/HorizontalButton';
 
 import logoImage from '../../assets/farmaciaLogoT3.png';
 import universityImage from '../../assets/urisan.png';
@@ -23,17 +24,23 @@ function Home() {
       </View>
 
       <View style={styles.buttonsContainer}>
-        <RectButton onPress={handleNavigateToPossuiReceitaPage} style={styles.horizontalButton}>
-          <Text style={styles.horizontalButtonText}>Novo Atendimento</Text>
-        </RectButton>
+        <HorizontalButton
+          text="Novo Atendimento"
+          onPressCall={handleNavigateToPossuiReceitaPage}
+          bgColor="#47B5B6"
+        />
 
-        <RectButton onPress={() => {}} style={styles.horizontalButton}>
-          <Text style={styles.horizontalButtonText}>Buscar Antibiótico</Text>
-        </RectButton>
+        <HorizontalButton
+          text="Buscar Antibiótico"
+          onPressCall={() => {}}
+          bgColor="#47B5B6"
+        />
 
-        <RectButton onPress={() => {}} style={styles.horizontalButton}>
-          <Text style={styles.horizontalButtonText}>Histórico de Atendimentos</Text>
-        </RectButton>
+        <HorizontalButton
+          text="Histórico de Atendimentos"
+          onPressCall={() => {}}
+          bgColor="#47B5B6"
+        />
       </View>
 
       <View style={styles.footerContainer}>

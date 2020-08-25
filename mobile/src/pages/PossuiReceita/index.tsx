@@ -10,8 +10,12 @@ import styles from './styles';
 function PossuiReceita() {
   const { navigate } = useNavigation();
 
-  function handleNavigateToIdentificacaoPacientePage() {
-    navigate('IdentificacaoPaciente');
+  function handleNavigateToAspectosLegaisPage() {
+    navigate('AspectosLegais');
+  }
+
+  function handleNavigateToNaoPossuiReceitaPage() {
+    navigate('NaoPossuiReceita');
   }
 
   return (
@@ -22,7 +26,14 @@ function PossuiReceita() {
 
       <HorizontalButton
         text="Sim"
-        onPressCall={handleNavigateToIdentificacaoPacientePage}
+        onPressCall={handleNavigateToAspectosLegaisPage}
+        bgColor="#47B5B6"
+      />
+
+      <HorizontalButton
+        text="Não"
+        onPressCall={handleNavigateToNaoPossuiReceitaPage}
+        bgColor="#922D50"
       />
     </View>
   );

@@ -9,12 +9,14 @@ interface PageHeaderProps {
 }
 
 const PageHeader: React.FC<PageHeaderProps> = ({ stage, title }) => {
-  return (
-    <View style={styles.container}>
-      <View style={styles.topBar}>
-      </View>
+  const stageComponent = stage.length > 1 ?
+    <Text style={styles.warning}>ATENÇÃO:</Text> :
+    <Text style={styles.stage}>Etapa {stage}/X:</Text>
+  ;
 
-      <Text style={styles.stage}>Etapa {stage}/X:</Text>
+  return (
+    <View style={styles.container}>      
+      {stageComponent}
       <Text style={styles.title}>{title}</Text>
     </View>
   )

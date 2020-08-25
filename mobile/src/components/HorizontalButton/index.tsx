@@ -6,12 +6,13 @@ import styles from './styles';
 
 interface ButtonProps {
   text: string;
+  bgColor: string;
   onPressCall(): any;
 }
 
-const HorizontalButton: React.FC<ButtonProps> = ({ text, onPressCall }) => {
+const HorizontalButton: React.FC<ButtonProps> = ({ text, bgColor, onPressCall }) => {
   return (
-    <RectButton onPress={onPressCall} style={styles.horizontalButton}>
+    <RectButton onPress={onPressCall} style={[styles.horizontalButton, {backgroundColor: bgColor}]}>
       <Text style={styles.horizontalButtonText}>{text}</Text>
     </RectButton>
   );
