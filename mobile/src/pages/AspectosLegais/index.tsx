@@ -10,8 +10,8 @@ import styles from './styles';
 function AspectosLegais() {
   const { navigate } = useNavigation();
 
-  function handleNavigateToIdentificacaoPacientePage() {
-    navigate('IdentificacaoPaciente');
+  function handleNavigateToSelecaoMedicamentoPage() {
+    navigate('SelecaoMedicamento');
   }
 
   function handleNavigateToEntreContatoPage() {
@@ -36,7 +36,7 @@ function AspectosLegais() {
 
       <HorizontalButton
         text="Sim"
-        onPressCall={handleNavigateToIdentificacaoPacientePage}
+        onPressCall={handleNavigateToSelecaoMedicamentoPage}
         bgColor="#47B5B6"
       />
 

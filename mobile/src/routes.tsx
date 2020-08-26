@@ -7,6 +7,7 @@ import PossuiReceita from './pages/PossuiReceita';
 import NaoPossuiReceita from './pages/NaoPossuiReceita';
 import AspectosLegais from './pages/AspectosLegais';
 import EntreContato from './pages/EntreContato';
+import SelecaoMedicamento from './pages/SelecaoMedicamento';
 import IdentificacaoPaciente from './pages/IdentificacaoPaciente';
 
 const { Navigator, Screen } = createStackNavigator();
@@ -20,6 +21,7 @@ function Routes() {
         <Screen name="NaoPossuiReceita" component={NaoPossuiReceita} />
         <Screen name="AspectosLegais" component={AspectosLegais} />
         <Screen name="EntreContato" component={EntreContato} />
+        <Screen name="SelecaoMedicamento" component={SelecaoMedicamento} />
         <Screen name="IdentificacaoPaciente" component={IdentificacaoPaciente} />
       </Navigator>
     </NavigationContainer>
